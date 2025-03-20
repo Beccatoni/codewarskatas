@@ -10,8 +10,9 @@ namespace codewarskatas
     {
         static void Main(string[] args)
         {
-            ReverseString("Becca God's daughter");
-            BreakCamelCase("CSharpIsCool");
+            Console.WriteLine(ReverseString("Becca God's daughter"));
+            Console.WriteLine(BreakCamelCase("CSharpIsCool"));
+            Console.ReadLine();
         }
 
         static string ReverseString(string str)
