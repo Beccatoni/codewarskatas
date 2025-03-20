@@ -10,11 +10,30 @@ namespace codewarskatas
     {
         static void Main(string[] args)
         {
+            ReverseString("Becca God's daughter");
+            BreakCamelCase("CSharpIsCool");
         }
 
-        static void ReverseString(string input)
+        static string ReverseString(string str)
         {
-            char 
+            char[] chars = str.ToCharArray();
+            Array.Reverse(chars);
+            Console.WriteLine(new string(chars));
+            return new string(chars);
+        }
+
+        static string BreakCamelCase(string str)
+        {
+            string result = "";
+            foreach (char character in str)
+            {
+                if (char.IsUpper(character))
+                {
+                    result += " ";
+                }
+                result += character;
+            }
+            return result;
         }
     }
 }
