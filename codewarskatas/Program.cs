@@ -36,5 +36,10 @@ namespace codewarskatas
             }
             return result;
         }
+        
+        static string NumberFormat(int number)
+        {
+            return number.ToString("N0");
+        }
     }
 }
