@@ -17,6 +17,7 @@ namespace codewarskatas
 
             Ship titanic = new Ship(15, 10);
             Console.WriteLine(titanic.IsWorthIt());
+            Console.WriteLine(Kata.Solution(10));
         }
 
         static string ReverseString(string str)
