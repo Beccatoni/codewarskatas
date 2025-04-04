@@ -14,7 +14,9 @@ namespace codewarskatas
             Console.WriteLine(BreakCamelCase("CSharpIsCool"));
             Console.WriteLine(NumberFormat(1232798537));
             Console.WriteLine(RomanToInt("MMVII"));
-            Console.ReadLine();
+
+            Ship titanic = new Ship(15, 10);
+            Console.WriteLine(titanic.IsWorthIt());
         }
 
         static string ReverseString(string str)
