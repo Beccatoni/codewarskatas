@@ -47,5 +47,20 @@ namespace codewarskatas
             
             return result;
         }
+
+        public static int VowelCounter(string str)
+        {
+            int vowelCount = 0; 
+            string vowels = "aeiou";
+            foreach (var ch in str)
+            {
+                if (vowels.Contains(ch))
+                {
+                    vowelCount++;
+                }
+            }
+            
+            return vowelCount;
+        }
     }
 }
