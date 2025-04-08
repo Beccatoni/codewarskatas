@@ -73,5 +73,17 @@ namespace codewarskatas
 
             return unique.ToArray();
         }
+        
+        public static IEnumerable<int> GetIntegersFromList(List<object> listOfItems)
+        {
+            List<int> integerList = new List<int>();
+
+            foreach(object element in listOfItems){
+                if(element  is int){
+                    integerList.Add((int)element);
+                }
+            }
+            return integerList;
+        }
     }
 }
