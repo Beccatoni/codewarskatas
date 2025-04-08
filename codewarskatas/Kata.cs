@@ -62,5 +62,16 @@ namespace codewarskatas
             
             return vowelCount;
         }
+
+        public static int[] distinct(int[] arr)
+        {
+            HashSet<int> unique = new HashSet<int>();
+            foreach (var integer in arr)
+            {
+                unique.Add(integer);
+            }
+
+            return unique.ToArray();
+        }
     }
 }

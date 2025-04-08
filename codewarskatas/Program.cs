@@ -19,6 +19,10 @@ namespace codewarskatas
             Console.WriteLine(titanic.IsWorthIt());
             Console.WriteLine(Kata.Solution(10));
             Console.WriteLine(RomanConvert.Solution(55));
+            
+            int[] input = { 1, 2, 2, 3, 4, 4, 5 };
+            int[] result = Kata.distinct(input);
+            Console.WriteLine(string.Join(", ", result));
         }
 
         static string ReverseString(string str)
